@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>West Boca Retirement Community</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/navbar-logo.svg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+        <!-- Masthead-->
+        <header class="masthead" id = "baseMasthead" style="display: none;">
+            <div class="community-logo">
+                <img class="community-logo img-fluid" src="../assets/img/community-logo-2-2.png" alt="Community Logo">
+            </div>
+            <div class="container">
+                <a class="btn btn-primary btn-xl text-uppercase resident-login-button" onclick="mastheadSwitch()">Resident Login</a>
+                <a class="btn btn-primary btn-xl text-uppercase resident-login-button" onclick="guestLogin()">Guest Login</a>
+            </div>
+        </header>
+
+        <!-- Masthead-lOGIN-->
+        <header class="masthead" id = "loginMasthead" style="display: none;">
+            <div class="container" id="test">
+                <div class="masthead-subheading login-title">Resident Login</div>
+                <div>
+                    <input class="masthead-heading" type="email" placeholder="Email..." id="email" />
+                    <input class="masthead-heading" type="password" placeholder="Password..." id="password" />
+                </div>
+                <p></p>
+                <a class="btn btn-primary btn-xl text-uppercase resident-login-button" onclick="login()">Login</a>
+            </div>
+        </header>
+
+        <!-- Masthead-PLACEHOLDER /Dashboard Button Section-->
+        <header class="masthead" id = "placeholderMasthead" style="display: none;">
+            <!-- Navbar to position the logout button at the top right of the screen. Taken and edited code from the dashboard page -->
+            <nav id="nav" class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" onclick="logout()">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container" id="test">
+                <a class="btn btn-primary btn-xl text-uppercase dashboard-button" id="dashboard-button">Dashboard</a>
+            </div>
+        </header>
+
+        <!-- Masthead-Register-->
+        <header class="masthead" id = "placeholderRegister" style="display: none;">
+            <div class="container" id="test">
+                <a class="btn btn-primary btn-xl text-uppercase" href="html/accountSetup.html">Setup Account</a>
+            </div>
+        </header>
+
+        <!-- Our Community-->
+        <section class="page-section our-community">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Our Community</h2>
+                    <h3 class="section-subheading text-muted">“The best way to find yourself is to lose yourself in the service of others.” - Mahatma Gandhi</h3>
+                </div>
+
+                <div class="our-community-body">
+                    <p>
+                        <strong>West Boca Retirement Community (WBRC)</strong> is a magnificent Active Adult +55 community that was built by Olman Luxury Suites from 2018 to 2022 and offered two
+                        different home collections; The Renaissance Collection and The Reserve Collection.  Between both collections there are 500 single family homes in WBRC, 
+                        which are situated on a waterfront or private lot.<br><br>
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>
+                                The Renaissance Collection had 4 different floorplans to choose from with a living square footage ranging from 1,886 up to 2,374. The smallest home features 
+                                2 Bedrooms , 2 Bathrooms and a 2 Car Garage and the largest home also has 2 Bedrooms , but has a half bath more. Every home in this collection has 
+                                a minimum lot size of 50'x110' and is one story. 
+                            </p>
+                            <p>
+                                <strong>Renaissance Collection:</strong>
+                                <ul>
+                                    <li>
+                                        <strong>Coronado - 1,886 AC Sq Ft</strong>
+                                        <ul>
+                                            <li>2 Bedrooms </li>
+                                            <li>2 Bathrooms</li>
+                                            <li>2 Car Garage</li>
+                                        </ul>
+                                    </li>
+        
+                                    <li>
+                                        <strong>Fontana - 2,246 AC Sq Ft</strong>
+                                        <ul>
+                                            <li>2 Bedrooms </li>
+                                            <li>2.5 Bathrooms</li>
+                                            <li>2 Car Garage</li>
+                                        </ul>
+                                    </li>
+        
+                                    <li>
+                                        <strong>Ventana - 2,322 AC Sq Ft</strong>
+                                        <ul>
+                                            <li>2 Bedrooms </li>
+                                            <li>2.5 Bathrooms</li>
+                                            <li>2 Car Garage</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <strong>Ventana - 2,322 AC Sq Ft</strong>
+                                        <ul>
+                                            <li>2 Bedrooms </li>
+                                            <li>2.5 Bathrooms</li>
+                                            <li>2 Car Garage</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <p>
+                                The Reserve Collection had 3 different floorplans to choose from with a living square footage ranging from 
+                                2,535 up to 3,328.  The smallest home features 3 Bedrooms , 3 Bathrooms and a 2 Car Garage while the largest
+                                home has 3 Bedrooms t and 3.5 Bathrooms.  All of the homes in this collection are also one story, except two of 
+                                the floorplans had an option for a guest suite to be built above the garage.  Lot sizes in the Reserve Collection are
+                                much larger than the Renaissance Collection and will be a minimum of 70'x110'.  
+                            </p>
+                            <p>
+                                <strong>Reserve Collection:</strong>
+                                <ul>
+                                    <li>
+                                        <strong>Seabourn - 2,535 AC Sq Ft</strong>
+                                        <ul>
+                                            <li>3 Bedrooms </li>
+                                            <li>3 Bathrooms</li>
+                                            <li>2 Car Garage</li>
+                                        </ul>
+                                    </li>
+        
+                                    <li>
+                                        <strong>Montego - 2,753-3,328 AC Sq Ft</strong>
+                                        <ul>
+                                            <li>3-4 Bedrooms </li>
+                                            <li>2.5-3.5 Bathrooms</li>
+                                            <li>2 Car Garage</li>
+                                            <li>Guest Suite Option</li>
+                                        </ul>
+                                    </li>
+        
+                                    <li>
+                                        <strong>Toscana - 2,776-3,118 AC Sq Ft</strong>
+                                        <ul>
+                                            <li>3-4 Bedrooms </li>
+                                            <li>2.5-3.5 Bathrooms</li>
+                                            <li>2 Car Garage</li>
+                                            <li>Guest Suite Option</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>  
+                    </div>
+
+                    <br>
+
+                    <p>
+                        All of the homes in WBRC are part of a homeowners association, which has a quarterly HOA fee and includes all of the amenities 
+                        listed below along with 24-hour manned gatehouse, basic cable, common area maintenance, lawn, landscaping and irrigation maintenance.<br><br>
+
+                        <strong>The resort style amenities at the WBRC include:</strong><br>
+                    </p>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <li>Swimming Pool</li>
+                            <li>Lap Lanes</li>
+                            <li>Fitness Center</li>
+                            <li>Card Room</li>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <li>Aerobics Studio</li>
+                            <li>Steam Room</li>
+                            <li>Men's & Women's Locker Room</li>
+                            <li>Library</li>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <li>Screened and Covered Patio</li>
+                            <li>Outdoor Patio</li>
+                            <li>Sports Lounge</li>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <li>Ballroom</li>
+                            <li>Arts and Crafts Studio</li>
+                            <li>Billiards Room</li>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            Disclaimer: This website is for an imaginary neighborhood. This page was created using <a href="https://startbootstrap.com/theme/agency">Agency</a> from StartBootstrap.
+        </footer>
+
+
+
+
+        <!--Firebase SDK-->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script src="js/scriptLogin.js"></script>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scriptsHome.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
